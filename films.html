@@ -1,0 +1,56 @@
+<html>
+	<head>
+	<title>175 Tao zhang Examen 03 PHP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script language="javascript" src="js/jquery-3.2.1.min.js"></script>
+
+		<script language="javascript" src="js/produits.js"></script>	
+		<script language="javascript" src="js/requetes.js"></script>
+		<script language="javascript" src="js/controleurViewProduits.js"></script>
+	</head>
+	<style>
+   table {
+      border-collapse: collapse;
+       width: 100%;
+   }
+
+   th, td {
+       text-align: left;
+      padding: 8px;
+   }
+
+   tr:nth-child(even){background-color: #f2f2f2}
+
+  th{
+     background-color: #4CAF50;
+     color: white;
+  }
+   h2{
+     background-color: #4CAF50;
+     color: white;
+  }
+  .num{text-align: right;}
+</style>
+	<body>
+	<div class="w3-green">
+	<h2>175 Exmen PHP</h2>
+	<div class="w3-bar">
+	<button class="w3-button w3-black" onClick="obtenirFormProduits('enregistrer');">Enregistrer(C)</button>
+	<button class="w3-button w3-teal" onClick="requetesServeurProduits('lister');">Lister(R)</button>
+	<button class="w3-button w3-teal" onClick="obtenirFormListercate('Listercate');">Lister par Categorie</button>
+	<button class="w3-button w3-red" onClick="obtenirFormEnleverProduits();">Enlever(D)</button>
+	<button class="w3-button w3-yellow" onClick="obtenirFormCompter();">Compter(U)</button>
+	<button class="w3-button w3-blue" onClick="obtenirFormListercode();">Rechercher(D)</button>
+
+	</div>
+	</div>
+	<div id="fenetre" style="position:relative;top:10%;left:40;display:none">
+	<div id="header" style="float:right;padding-right:;hand:cursor;" onClick="$('#fenetre').hide();">X</div>
+	<div id="contenu"></div>
+	</div>
+	<div id="message" style="position:relative;top:3%;left:80%"></div>
+	
+	</body>
+</html>
